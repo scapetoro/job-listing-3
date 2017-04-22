@@ -20,10 +20,69 @@
 @import "font-awesome";
 
 .jumbotron {
-  background-image:url('http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-542213.png');
+  background-image:url('https://cdn.pixabay.com/photo/2017/04/03/12/09/new-york-2198199_1280.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 110px;
+}
+
+/****** COPY ******/
+
+.section-content {
+  width: 1000px;
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8em;
+
+  .title {
+    padding: 20px 0 10px;
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .advantage-title{
+    color: #858c8b;
+    font-size: 21px;
+  }
+
+  .description {
+    width: 420px;
+    margin: 0 auto;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .col-3 {
+    padding-top: 20px;
+    .item {
+      width: 700px;
+      margin-left: 33px;
+      position: relative;
+      top: 0;
+      -webkit-transition: all .4s;
+      transition: all .4s;
+      &:hover {
+        position: relative;
+        top: -5px;
+      }
+      .advantage-img {
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .advantage-title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #333333;
+        font-weight: bold;
+        line-height: 24px;
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 .title {
@@ -98,7 +157,7 @@
 }
 
 .navbar-default {
-    background-color: #00BCD4;  //navbar背景颜色
+    background-color: #233140;  //navbar背景颜色
 
     border-color: #006064; //navbar边框色
 
@@ -120,7 +179,7 @@
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #D500F9; //鼠标放置在链接上的文字颜色
+  color: #FAFAFA; //鼠标放置在链接上的文字颜色
 
   background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
 }
@@ -132,7 +191,7 @@
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #D500F9; //鼠标放置在链接上的文字颜色
+  color: #FAFAFA; //鼠标放置在链接上的文字颜色
 
   background-color: transparent;
 }
@@ -279,4 +338,15 @@
 
 .login-help{
   font-size: 12px;
+}
+
+
+
+footer {
+    color: white;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
 }
