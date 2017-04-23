@@ -19,142 +19,7 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.jumbotron {
-  background-image:url('https://cdn.pixabay.com/photo/2017/04/03/12/09/new-york-2198199_1280.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 110px;
-}
-
-/****** COPY ******/
-
-.section-content {
-  width: 1000px;
-  padding-top: 50px;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.8em;
-
-  .title {
-    padding: 20px 0 10px;
-    color: #333333;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .advantage-title{
-    color: #858c8b;
-    font-size: 21px;
-  }
-
-  .description {
-    width: 420px;
-    margin: 0 auto;
-    line-height: 26px;
-    margin-bottom: 20px;
-  }
-  .col-3 {
-    padding-top: 20px;
-    .item {
-      width: 700px;
-      margin-left: 33px;
-      position: relative;
-      top: 0;
-      -webkit-transition: all .4s;
-      transition: all .4s;
-      &:hover {
-        position: relative;
-        top: -5px;
-      }
-      .advantage-img {
-        width: 60px;
-        height: 60px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      .advantage-title {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        color: #333333;
-        font-weight: bold;
-        line-height: 24px;
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-.title {
-
-  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-  max-width: 500px;//最大宽度
-  margin-top: 200px;//和顶部拉开距离
-  margin-bottom: 0;//这样就可以紧接息面的描述文字
-  border-top-right-radius: 3px;//右上角圆边
-  border-top-left-radius: 3px;//左上角圆边
-  }
-
- .jumbotron h1, .jumbotron .h1 {
-     text-align: left;//文字左对齐
-     color: #222;  //字体颜色
-
-     padding: 50px 20px 0;//上50px，左右20px，下0
- }
-
- .jumbotron p {
-     margin: 0;//上下左右margin为0
-     font-size: 26px;//字体大小
-     max-width: 500px;//最大宽度
-     background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-     padding: 20px;//上下左右padding为20px
-     text-align:left;//文字左对齐
-     color: #222;//字体颜色
-
-     border-bottom-right-radius: 3px;//右下角圆边
-     border-bottom-left-radius: 3px;//左下角圆边
- }
-
-.slogan {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: white;
-  top: 12px;
-}
-
-.lead {
-  margin-bottom: 60px;
-  text-align: center;
-  color: white;
-}
-
-.caption {
-  margin: 30px;
-  text-align: center;
-  top: 20px;
-}
-
-.thumbnail {
-    border: 0 none;
-    box-shadow: none;
-    margin-top: 60px;
-}
-
-.custab{
-  border: 1px solid #ccc;
-
-  padding: 5px;
-  margin: 5% 0;
-  box-shadow: 3px 3px 2px #ccc;
-
-  transition: 0.5s;
-}
-
-.custab:hover{
-  box-shadow: 3px 3px 0px transparent;
-  transition: 0.5s;
-}
+//-----navbar---------
 
 .navbar-default {
     background-color: #233140;  //navbar背景颜色
@@ -170,6 +35,8 @@
   }
 }
 
+//-----navbar Logo color---------
+
 .navbar-default .navbar-brand {
   color: #EF6C00; //字体颜色
 
@@ -183,6 +50,8 @@
 
   background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
 }
+
+//--------navbar link color------
 
 .navbar-default .navbar-nav > li > a{
   color: #EF6C00; //字体颜色
@@ -213,11 +82,74 @@
 
 }
 
+//------box1------
+
+.jumbotron {
+  background-image:url('https://cdn.pixabay.com/photo/2017/04/03/12/09/new-york-2198199_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 110px;
+}
+
+
+
+.title {
+
+  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
+  max-width: 500px;//最大宽度
+  margin-top: 200px;//和顶部拉开距离
+  margin-bottom: 0;//这样就可以紧接息面的描述文字
+  border-top-right-radius: 3px;//右上角圆边
+  border-top-left-radius: 3px;//左上角圆边
+  }
+
+ .jumbotron h1, .jumbotron .h1 {
+     text-align: left;//文字左对齐
+     color: #222;  //字体颜色
+
+     padding: 50px 20px 0;//上50px，左右20px，下0
+ }
+
+ .jumbotron p {
+     margin: 0;//上下左右margin为0
+     font-size: 26px;//字体大小
+     max-width: 500px;//最大宽度
+     background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
+     padding: 20px;//上下左右padding为20px
+     text-align:left;//文字左对齐
+     color: white;//字体颜色
+
+     border-bottom-right-radius: 3px;//右下角圆边
+     border-bottom-left-radius: 3px;//左下角圆边
+ }
+
+
+.custab{
+  border: 1px solid #ccc;
+
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #ccc;
+
+  transition: 0.5s;
+}
+
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
+
+
+
+//------image full page------
+
 .container-fluid .jumbotron{
   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
   margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
   border-radius: 0;//圆角为0
 }
+
+//------button color-------其他的 btn-default、btn-info、btn-success 等依样画葫芦修改即可
 
 .btn-danger {
     color: #fff;//字体颜色
@@ -235,6 +167,8 @@
 
 }
 
+//------button size-------默认有 btn-xs、btn-sm、btn-lg 对应不同的按钮尺寸
+
 .btn-lg, .btn-group-lg > .btn {
     padding: 8px 16px;//通过padding来决定btn的大小
     font-size: 20px;//btn文字大小
@@ -242,6 +176,37 @@
     border-radius: 3px;//btn圆角
     width: 200px;//这里用指定宽度把btn拉得更长
 }
+
+//---------Content---------
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;//字体颜色
+}
+
+//-------设置弹窗样式----------
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
@@ -340,13 +305,87 @@
   font-size: 12px;
 }
 
+//------footer------http://codepen.io/nickbraver/pen/mHLCp
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 
-footer {
+.footer {
     color: white;
 }
 
-footer .footer-below {
-    padding: 25px 0;
-    background-color: #233140;
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 15px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
 }
