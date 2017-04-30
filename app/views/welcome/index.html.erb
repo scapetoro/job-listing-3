@@ -1,116 +1,103 @@
-<div class="row">
-  <div class="col-sm-6 col-md-12">
-    <div class="thumbnail">
-      <img src="https://cdn.pixabay.com/photo/2017/03/13/17/27/man-2140606_1280.jpg" alt="Smiley face">
-      <div class="caption">
-        <h3>步步为赢</h3>
-        <p>步步为赢 是一个提供顶尖工作机会的求职网站。
-          <br>
-          我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。
-          <br>
-          凭借自己的努力和天份也会变 Winner
-         </p>
-        <p>
-          <a href="/jobs" class="btn btn-lg btn-primary" role="button">马上应征</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="col-md-12">
+   <div class="row box">
+     <div class="box-inner col-md-6 col-md-offset-3">
+       <h1 class="title">Tunnel Construction</h1>
+       <p class="slogan"> Provide worldwide construction jobs
+       </p>
+       <p class="lead">
+         <%= link_to 'Join Us', jobs_path, class: 'btn btn-danger' %>
+       </p>
+     </div>
+   </div>
+ </div>
 
-<div class="row">
-  <div class="col-xs-6 col-md-3">
+<!-- <div class="row">
+  <div class="col-xs-6 col-md-6">
     <a href="/jobs" class="thumbnail">
-      <img src="https://cdn.pixabay.com/photo/2017/03/28/12/06/chairs-2181916__480.jpg" alt="...">
+      <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
     </a>
   </div>
-  <div class="col-xs-6 col-md-3">
+  <div class="col-xs-6 col-md-6">
     <a href="/jobs" class="thumbnail">
-      <img src="https://cdn.pixabay.com/photo/2014/07/30/22/56/workstation-405768__480.jpg" alt="...">
+      <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
     </a>
   </div>
-  <div class="col-xs-6 col-md-3">
+  <div class="col-xs-6 col-md-6">
     <a href="/jobs" class="thumbnail">
-      <img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132__480.jpg" alt="...">
+      <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
     </a>
   </div>
-  <div class="col-xs-6 col-md-3">
+  <div class="col-xs-6 col-md-6">
     <a href="/jobs" class="thumbnail">
-      <img src="https://cdn.pixabay.com/photo/2015/02/02/15/28/bar-621033__480.jpg" alt="...">
+      <%= image_tag 'pic-4.jpg', class: 'img-responsive' %>
     </a>
   </div>
-</div>
+</div> -->
 
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://cdn.pixabay.com/photo/2014/05/02/21/46/office-336368__480.jpg" alt="Smiley face">
+      <%= image_tag("pic-2.jpg", :alt => "Smiley face") %>
       <div class="caption">
-        <h3>找工作一定要带手机</h3>
-        <p>因为没带手机就不能联络公司</p>
-        <br>
+        <h3>Metro</h3>
+        <p>Going underground for mobility in our cities</p>
         <p>
-          <a href="/jobs" class="btn btn-primary" role="button">最钱途</a>
+          <a href="/jobs" class="btn btn-primary" role="button">
+            <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>Metro</a>
         </p>
       </div>
     </div>
   </div>
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://cdn.pixabay.com/photo/2014/10/01/14/07/tax-468440__480.jpg" alt="alert">
+      <%= image_tag("pic-3.jpg", :alt => "Smiley face") %>
       <div class="caption">
-        <h3>一定要把履历写好在投</h3>
-        <p>履历如果不会写就一定要多上网寻求帮助，
-          <br>
-          例如<a target="_blank" href="http://blog.niclin.tw">Nic 的 Blog</a>
-        </p>
+        <h3>Road</h3>
+        <p>High-tech tunnelling for safe highways</p>
         <p>
-          <a href="/jobs" class="btn btn-success" role="button">最紧缺</a>
+          <a href="/jobs" class="btn btn-success" role="button">
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>Road</a>
         </p>
       </div>
     </div>
   </div>
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825__480.jpg" alt="alert">
+      <%= image_tag("pic-4.jpg", :alt => "Smiley face") %>
       <div class="caption">
-        <h3>还在想要做什么功能</h3>
-        <p>魔改大赛可以参考<a target="_blank" href="https://forum.qzy.camp/">
-          <br>
-          论坛资源</a>
-        </p>
+        <h3>Railway</h3>
+        <p>Innovative tunnelling for fast and easy journeys</p>
         <p>
-          <a href="/jobs" class="btn btn-info" role="button">最热门</a>
+          <a href="/jobs" class="btn btn-info" role="button">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Railway</a>
         </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="panel panel-warning">
+<div class="panel panel-warning" style="margin-bottom: 100px;">
   <div class="panel-heading">
-   <h3 class="panel-title">步步为赢</h3>
+   <h3 class="panel-title">Tunnel Construction Jobs</h3>
     </div>
       <div class="well well-sm">
         <table class="table table-boldered">
           <!-- List group -->
           <div class="list-group">
-            <a href="/jobs" class="list-group-item">
-              <span class="badge">14</span>
-              最新职位
-            </a>
-            <a href="/jobs" class="list-group-item list-group-item-success">报酬最高在这里</a>
-            <a href="/jobs" class="list-group-item list-group-item-info">海外派驻机构</a>
-            <a href="/jobs" class="list-group-item list-group-item-warning">国内研发部门</a>
-            <a href="/jobs" class="list-group-item list-group-item-danger">人力资源开发</a>
+            <a href="/jobs" class="list-group-item list-group-item-danger">
+              <span class="badge">14</span>New</a>
+            <a href="/jobs" class="list-group-item list-group-item-success">
+              <span class="badge">7</span>Fat salary</a>
+            <a href="/jobs" class="list-group-item list-group-item-info">
+              <span class="badge">6</span>Overseas</a>
+            <a href="/jobs" class="list-group-item list-group-item-warning">
+              <span class="badge">10</span>Domestic</a>
             <a href="/jobs" class="list-group-item active">
-              <h4 class="list-group-item-heading">高薪职位向你招手</h4>
-                <p class="list-group-item-text">轻点鼠标马上抵达,
-                  <br> 步步为赢将为你提供全程服务.
-                </p>
+              <h4 class="list-group-item-heading">Job offers</h4>
+                <p class="list-group-item-text">Find your desired job with us</p>
             </a>
           </div>
         </table>
       </div>
-    <div class="panel-footer">步步为赢</div>
+    <div class="panel-footer">Tunnel Construction Jobs</div>
 </div>

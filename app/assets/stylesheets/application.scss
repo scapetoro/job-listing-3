@@ -24,9 +24,21 @@
 .navbar-default {
     background-color: #233140;  //navbar背景颜色
 
-    border-color: #006064; //navbar边框色
+    border-color: #233140; //navbar边框色
 
     margin-bottom: 0; //底部 margin 不撑开距离
+}
+
+.navbar-fixed-top {
+    top: 0px;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 @media (min-width: 768px) {
@@ -36,6 +48,13 @@
 }
 
 //-----navbar Logo color---------
+
+.navbar-brand > img {
+   display: inline-block; //图片和链接文字显示在同一行
+   margin-right: 10px; //图片和链接文字拉开一点距离
+   width: 22px; //定制图片宽度
+   height: 18px; //定制图片高度
+}
 
 .navbar-default .navbar-brand {
   color: #EF6C00; //字体颜色
@@ -76,7 +95,7 @@
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-  background-color: #00B0FF; //账户下拉菜单背景颜色
+  background-color: #233140; //账户下拉菜单背景颜色
 
   color: #C51162; //用户名文字颜色
 
@@ -84,45 +103,50 @@
 
 //------box1------
 
-.jumbotron {
-  background-image:url("header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 110px;
+.box {
+     background-image: url("header.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 50px;
+
+.box-inner {
+   background-color: rgba(250, 250, 250, 0.15);//背景颜色含透明度
+   max-width: 500px;//最大宽度
+   margin-top: 200px;//和顶部拉开距离
+   margin-bottom: 0;//这样就可以紧接息面的描述文字
+   border-top-right-radius: 3px;//右上角圆边
+   border-top-left-radius: 3px;//左上角圆边
 }
-
-
 
 .title {
 
-  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-  max-width: 500px;//最大宽度
-  margin-top: 200px;//和顶部拉开距离
-  margin-bottom: 0;//这样就可以紧接息面的描述文字
-  border-top-right-radius: 3px;//右上角圆边
-  border-top-left-radius: 3px;//左上角圆边
-  }
+   text-align: left;//文字左对齐
+   color: #222;  //字体颜色
+   padding: 50px 20px 0;//上50px，左右20px，下0
+}
 
- .jumbotron h1, .jumbotron .h1 {
-     text-align: left;//文字左对齐
-     color: #222;  //字体颜色
+.slogan {
 
-     padding: 50px 20px 0;//上50px，左右20px，下0
- }
+   margin: 0;//上下左右margin为0
+   font-size: 24px;//字体大小
+   max-width: 500px;//最大宽度
+   background-color: rgba(250, 250, 250, 0.00);//背景颜色含透明度
+   padding: 20px;//上下左右padding为20px
+   text-align:center;//文字左对齐
+   color: #90A4AE;//字体颜色
 
- .jumbotron p {
-     margin: 0;//上下左右margin为0
-     font-size: 26px;//字体大小
-     max-width: 500px;//最大宽度
-     background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-     padding: 20px;//上下左右padding为20px
-     text-align:left;//文字左对齐
-     color: white;//字体颜色
+   border-bottom-right-radius: 3px;//右下角圆边
+   border-bottom-left-radius: 3px;//左下角圆边
+}
 
-     border-bottom-right-radius: 3px;//右下角圆边
-     border-bottom-left-radius: 3px;//左下角圆边
- }
+.lead {
+   margin-bottom: 60px;
+   text-align: center;
+   color: white;
+}
+}
 
+//---admin table style-----
 
 .custab{
   border: 1px solid #ccc;
@@ -139,13 +163,11 @@
   transition: 0.5s;
 }
 
-
-
 //------image full page------
 
-.container-fluid .jumbotron{
+.container-fluid .box{
   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  margin: 0 -30px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
   border-radius: 0;//圆角为0
 }
 
@@ -175,35 +197,6 @@
     letter-spacing: 3px;//调整文字间距
     border-radius: 3px;//btn圆角
     width: 200px;//这里用指定宽度把btn拉得更长
-}
-
-//---------Content---------
-
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-.content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-}
-
-.section-heading {
-    margin-bottom: 30px;
-}
-
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-    color: #222;//字体颜色
 }
 
 //-------设置弹窗样式----------
@@ -305,9 +298,54 @@
   font-size: 12px;
 }
 
+//------crchijoblisting-----copy
+
+/*job*/
+.job_newsimg{ margin-bottom:20px; padding:10px 4% !important;}
+
+.job_search{ padding:10px 2%; background:#eaeaea;}
+.job_search .job_t{ float:left; font-size:16px; margin-right:2%; line-height:34px;}
+.job_search .job_sele{ width:22%; float:left; margin-right:2%; float:left; height:34px; line-height:34px; background:#fff url(../images/job_bg.gif) no-repeat right; text-indent:10px; border:1px solid #e3e3e3;}
+.job_search .job_sele ._option{ top:34px; border-color:#eaeaea; line-height:30px; }
+.job_search .job_sele ._option a{border-bottom:1px dotted #eaeaea;}
+.job_search .jobse_inp{ width:20%; height:36px; line-height:36px; background:#fff; border:1px solid #e3e3e3; float:left; text-indent:10px; margin-right:2%;}
+.job_search .jobse_btn{ width:10%; height:35px; line-height:35px; background:#ffad00; color:#fff; border:none;}
+
+.job_main{ margin-top:20px;}
+.job_main .job_menu{ width:15%; float:left; }
+.job_main .job_list{ width:60%; float:right;}
+
+.job_menu li{ line-height:40px; border:1px solid #dfdfdf; margin-bottom:10px; text-align:center; background:#dfdfdf; font-size:16px; position:relative;}
+.job_menu li a{ display:block; color:#565656;}
+.job_menu li.cur a,.job_menu li a:hover{ background:#fff; color:#de2123;}
+.job_menu li i{ width:5px; height:7px; background:url(../images/job_jt.gif) no-repeat 0 0; position:absolute; top:50%; margin-top:-3px; right:-5px; display:none;}
+.job_menu li.cur a i,.job_menu li a:hover i{ display:block;}
+
+.JobList-J2 ._jt { height: 41px; line-height: 26px; overflow: hidden;  *zoom: 1;
+cursor: pointer; padding:10px 0; border:1px solid #e7e7e7; margin-bottom:20px; }
+.JobList-J2 ._jt .title { float: left; width:85%; text-indent:20px; font-size:16px; margin-top: 0px; margin-right:2%; line-height:24px; white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.JobList-J2 ._jt .jico { float: right; width:24px; height:24px; line-height:24px; text-align:center; overflow:hidden; background:#838383; color:#fff; margin-right:1%;}
+.JobList-J2 ._jt .jico_o{ display:none; background:#de2123; color:#fff;}
+.JobList-J2 ._jc { display: none; border:1px solid #e7e7e7; margin-bottom:20px; border-top:none;}
+.JobList-J2 ._jcon { margin:0 10px; border-top:1px dotted #e7e7e7; padding:10px;}
+.JobList-J2 ._jt_act{ margin-bottom:0; border-bottom:none;}
+.JobList-J2 ._jt_act .jico_o{ display:block;}
+.JobList-J2 ._jt_act .jico_c{ display:none;}
+.JobList-J2 .job_tt{ margin-bottom:10px;}
+.JobList-J2 ._jt_act .title{ color:#de2123; }
+.JobList-J2 .job_btnn{ margin-top:10px;}
+.JobList-J2 .job_btnn a{ display:inline-block; line-height:30px; width:100px; background:#de2123; color:#fff; text-align:center;}
+
+/*qa*/
+.qa_main .job_list{ float:none; width:100%;}
+
+/*20150416*/
+.job_news .newsly_left{  float: none;  width: 100%;}
+/*20150416*/
+
 //------footer------http://codepen.io/nickbraver/pen/mHLCp
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+@import url(http://fonts.googleapis.com/css?family=SourceSansPro:300,400);
 
 .footer {
     color: white;
@@ -377,7 +415,7 @@ height:100%;
 	height:auto;
 	margin:0 auto;
 }
-.footer_center{
+.footer_left{
 	width:500px;
 	float:left;
   text-align:center;
@@ -388,4 +426,5 @@ height:100%;
 	font-weight: 100;
 	margin-top:70px;
 	margin-left:40px;
+  padding-top: 15px;
 }

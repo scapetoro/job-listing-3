@@ -4,7 +4,11 @@
   <%= simple_format(@job.description) %>
 
   <div class="text-center">
-    <%= link_to("投交履历", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration:underline;") %>
+    <%= link_to("Submit a resume", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration:underline;") %>
   </div>
+
+  <p class="lead">
+    <%= link_to 'Back', jobs_path, class: 'btn btn-danger' %>
+  </p>
 
 </p>
