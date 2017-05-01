@@ -1,10 +1,13 @@
 class Job < ApplicationRecord
   has_many :resumes
 
-  validates :title, :description, presence: true
+  validates :title, :description, :location, presence: true
   validates :wage_upper_bound, presence: true
   validates :wage_lower_bound, presence: true
+  validates :recruiting_number, presence: true
   validates :wage_lower_bound, numericality: { greater_than: 0}
+  validates :recruiting_number, numericality: { greater_than: 0}
+
 
   def publish!
     self.is_hidden = false
