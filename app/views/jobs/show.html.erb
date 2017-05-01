@@ -1,14 +1,42 @@
-<h1> <%= @job.title %> </h1>
+<hr>
+<h2>- Job View -</h2>
+<hr>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="panel-title">
+          <%= @job.title %>
+        </h3>
+      </div>
 
-<p>
-  <%= simple_format(@job.description) %>
-
-  <div class="text-center">
-    <%= link_to("Submit a resume", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration:underline;") %>
+    </div>
   </div>
+  <div class="panel-body">
+    <div class="trix-content">
+      <p> <%= simple_format(@job.description) %> </p>
+      <hr>
+      <strong>Location：</strong> <%= @job.location %>
+      <br>
+      <strong>Recruiting Number：</strong> <%= @job.recruiting_number %>
+      <br>
+      <strong>Compensation Package：</strong>
+      <%= @job.wage_lower_bound %>$
+      -
+      <%= @job.wage_upper_bound %>$
+      <br>
+      <strong>Published At：</strong>
+      <%= @job.created_at %>
+    </div>
+    <hr>
 
-  <p class="lead">
-    <%= link_to 'Back', jobs_path, class: 'btn btn-danger' %>
-  </p>
+    <div class="text-center">
+      <%= link_to("Submit a resume", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration:underline;") %>
+    </div>
 
+  </div>
+</div>
+
+<p class="lead">
+  <%= link_to 'Back', jobs_path, class: 'btn btn-danger' %>
 </p>

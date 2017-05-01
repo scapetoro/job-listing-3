@@ -1,10 +1,22 @@
+<hr>
 <h3> Submit a resume to <%= @job.title %> </h3>
 
 <hr>
 
-<%= simple_form_for [@job, @resume] do |f| %>
-  <%= f.input :content %>
-  <%= f.input :attachment %>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="trix-content">
+      <%= simple_form_for [@job, @resume] do |f| %>
+        <%= f.input :content %>
+        <%= f.input :attachment %>
+        <p class="lead">
+          <%= f.submit "Submit" , class: 'btn btn-success' %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>
 
-  <%= f.submit "Submit" %>
-<% end %>
+<p class="lead">
+  <%= link_to 'Back', jobs_path, class: 'btn btn-danger' %>
+</p>
