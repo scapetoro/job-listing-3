@@ -13,8 +13,15 @@ Rails.application.routes.draw do
   end
 
   resources :jobs do
-    resources :resumes
+    collection do
+      get :search
+    end
+      resources :resumes
   end
+
+  resources :metro
+  resources :road
+  resources :railway
 
   root 'welcome#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
