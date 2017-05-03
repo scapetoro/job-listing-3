@@ -115,25 +115,24 @@
     width: 200px; //加上width
 }
 
-//------box1------
+//------box------
 
 .box {
-     background-image: url("header.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     margin-bottom: 50px;
+   background-image: url("header.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-bottom: 50px;
 
 .box-inner {
    background-color: rgba(250, 250, 250, 0.00);//背景颜色含透明度
    max-width: 500px;//最大宽度
    margin-top: 200px;//和顶部拉开距离
-   margin-bottom: 0;//这样就可以紧接息面的描述文字
+   margin-bottom: 150px;//和底部拉开距离，这样才可以将图片完全显示
    border-top-right-radius: 3px;//右上角圆边
    border-top-left-radius: 3px;//左上角圆边
 }
 
 .title {
-
    text-align: left;//文字左对齐
    color: #FF6D00;  //字体颜色
    padding: 50px 20px 0;//上50px，左右20px，下0
@@ -168,9 +167,9 @@
 
 .box-inner {
     background-color: rgba(250, 250, 250, 0.15);//背景颜色含透明度
-    max-width: 400px;//最大宽度
+    max-width: 500px;//最大宽度
     margin-top: 200px;//和顶部拉开距离
-    margin-bottom: 0;//这样就可以紧接息面的描述文字
+    margin-bottom: 150px;//
     border-top-right-radius: 3px;//右上角圆边
     border-top-left-radius: 3px;//左上角圆边
 }
@@ -213,7 +212,7 @@
    background-color: rgba(250, 250, 250, 0.15);//背景颜色含透明度
    max-width: 500px;//最大宽度
    margin-top: 200px;//和顶部拉开距离
-   margin-bottom: 0;//这样就可以紧接息面的描述文字
+   margin-bottom: 150px;//
    border-top-right-radius: 3px;//右上角圆边
    border-top-left-radius: 3px;//左上角圆边
 }
@@ -256,7 +255,7 @@
    background-color: rgba(250, 250, 250, 0.75);//背景颜色含透明度
    max-width: 500px;//最大宽度
    margin-top: 200px;//和顶部拉开距离
-   margin-bottom: 0;//这样就可以紧接息面的描述文字
+   margin-bottom: 150px;//
    border-top-right-radius: 3px;//右上角圆边
    border-top-left-radius: 3px;//左上角圆边
 }
@@ -287,6 +286,53 @@
    text-align: center;
    color: white;
 }
+}
+
+
+ //---------Content---------
+
+ .content-section-a {
+     padding: 50px 0;
+ }
+
+ .content-section-b {
+      background-color: #f8f8f8;
+      padding: 50px 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+ }
+
+ .section-heading-spacer {
+     float: left;
+     width: 200px;
+     border-top: 3px solid #e7e7e7;
+ }
+
+ .section-heading {
+     margin-bottom: 30px;
+ }
+
+ .lead {
+     font-size: 18px;
+     font-weight: 400;
+ }
+
+ //---cooperation--
+
+.our-coop{
+    background-color: #f8f8f8;
+    img{
+      margin: 25px 25px 35px 25px;
+      width: 180px;
+    }
+
+}
+
+h2.brand-title{
+    color: #4C4C4C;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 //---admin table style-----
@@ -504,6 +550,38 @@ cursor: pointer; padding:10px 0; border:1px solid #e7e7e7; margin-bottom:20px; }
 .job_news .newsly_left{  float: none;  width: 100%;}
 /*20150416*/
 
+//-----runTop-----
+
+.runTop {
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: fixed;
+  top: 90%;
+  right: 3%;
+  display: none;
+  box-shadow: 1px 1px 3px #666;
+}
+
+.runTop span {
+  color: #000;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  bottom: 8px;
+  right: 7px;
+  font-size: 20px;
+}
+
+.runTop:hover {
+  background-color: #4A6BB5;
+}
+
+.runTop:hover span {
+  color: #fff;
+}
+
 //------footer------http://codepen.io/nickbraver/pen/mHLCp
 
 @import url(http://fonts.googleapis.com/css?family=SourceSansPro:300,400);
@@ -553,16 +631,16 @@ cursor: pointer; padding:10px 0; border:1px solid #e7e7e7; margin-bottom:20px; }
 }
 .footer:hover {
 	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 	height: 10em;
 }
 .footer #container{
 	margin-top:5px;
 	width:100%;
-height:100%;
+  height:100%;
   position:relative;
   top:0;
   left:0;
