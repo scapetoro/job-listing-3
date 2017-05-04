@@ -51,13 +51,14 @@
 
 .navbar-brand > img {
    display: inline-block; //图片和链接文字显示在同一行
-   margin-right: 10px; //图片和链接文字拉开一点距离
-   width: 22px; //定制图片宽度
-   height: 18px; //定制图片高度
+   margin-bottom: 6px;
+   margin-right: 20px; //图片和链接文字拉开一点距离
+   width: 30px; //定制图片宽度
+   height: 30px; //定制图片高度
 }
 
 .navbar-default .navbar-brand {
-  color: #EF6C00; //字体颜色
+  color: #d50000; //字体颜色
 
   padding: 10px 15px; //上下10px，左右15px
   line-height: 30px; //文字行高
@@ -73,7 +74,7 @@
 //--------navbar link color------
 
 .navbar-default .navbar-nav > li > a{
-  color: #EF6C00; //字体颜色
+  color: #d50000; //字体颜色
 
 }
 
@@ -97,7 +98,7 @@
 .navbar-default .navbar-nav > .open > a:hover {
   background-color: #233140; //账户下拉菜单背景颜色
 
-  color: #C51162; //用户名文字颜色
+  color: #d50000; //用户名文字颜色
 
 }
 
@@ -105,7 +106,7 @@
 
 .form-group {
     margin-bottom: 10px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .input-group {
@@ -118,44 +119,46 @@
 //------box------
 
 .box {
-   background-image: url("header.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin-bottom: 50px;
+  //  background-image: url("header.jpg");
+  //  background-repeat: no-repeat;
+  //  background-size: cover;
+  //  margin-bottom: 50px;
+   background: image_url("header.jpg") no-repeat scroll top center/ cover;
 
 .box-inner {
-   background-color: rgba(250, 250, 250, 0.00);//背景颜色含透明度
-   max-width: 500px;//最大宽度
+   background-color: rgba(250, 250, 250, 0.33);//背景颜色含透明度
+   max-width: 600px;//最大宽度
    margin-top: 200px;//和顶部拉开距离
-   margin-bottom: 150px;//和底部拉开距离，这样才可以将图片完全显示
+   margin-bottom: 250px;//和底部拉开距离，这样才可以将图片完全显示
    border-top-right-radius: 3px;//右上角圆边
    border-top-left-radius: 3px;//左上角圆边
 }
 
 .title {
    text-align: left;//文字左对齐
-   color: #FF6D00;  //字体颜色
+   margin: 0 -8px 0;//上下左右margin为0
+   color: #d50000;  //字体颜色
    padding: 50px 20px 0;//上50px，左右20px，下0
 }
 
 .slogan {
 
-   margin: 0;//上下左右margin为0
+   text-align: left;//文字左对齐
    font-size: 24px;//字体大小
-   max-width: 500px;//最大宽度
+   max-width: 600px;//最大宽度
    background-color: rgba(250, 250, 250, 0.00);//背景颜色含透明度
-   padding: 20px;//上下左右padding为20px
-   text-align:center;//文字左对齐
-   color: #FF6D00;//字体颜色
+   padding: 10px 0 8px 12px;//上下左右padding为20px
+   color: #d50000;//字体颜色
 
    border-bottom-right-radius: 3px;//右下角圆边
    border-bottom-left-radius: 3px;//左下角圆边
 }
 
 .lead {
-   margin-bottom: 60px;
-   text-align: center;
-   color: white;
+
+  padding: 0 0 0 12px;//上下左右padding为20px
+   text-align: left;
+
 }
 }
 
@@ -292,12 +295,15 @@
  //---------Content---------
 
  .content-section-a {
+     background-color: #B2EBF2;
      padding: 50px 0;
+     margin: 0 -15px 0;
  }
 
  .content-section-b {
-      background-color: #f8f8f8;
+      background-color: #A7FFEB;
       padding: 50px 0;
+      margin: 0 -15px 0;
       border-top: 1px solid #e7e7e7;
       border-bottom: 1px solid #e7e7e7;
  }
@@ -320,7 +326,8 @@
  //---cooperation--
 
 .our-coop{
-    background-color: #f8f8f8;
+    background-color: #A7FFEB;
+    margin: 0 -15px 0;
     img{
       margin: 25px 25px 35px 25px;
       width: 180px;
