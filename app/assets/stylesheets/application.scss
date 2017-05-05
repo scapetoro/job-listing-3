@@ -311,7 +311,7 @@
  .section-heading-spacer {
      float: left;
      width: 200px;
-     border-top: 3px solid #e7e7e7;
+     border-top: 3px solid #0288D1;
  }
 
  .section-heading {
@@ -328,9 +328,11 @@
 .our-coop{
     background-color: #A7FFEB;
     margin: 0 -15px 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
     img{
-      margin: 25px 25px 35px 25px;
-      width: 180px;
+      margin: 20px 25px 35px 25px;
+      width: 100px;
     }
 
 }
@@ -340,6 +342,21 @@ h2.brand-title{
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 700;
+}
+
+.short-line {
+    display: block;
+    background: #0288D1;
+    border-style: none;
+    border-radius: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    z-index: 53;
+    width: 200px;
+    height: 3px;
+    position: relative;
 }
 
 //---admin table style-----
@@ -562,13 +579,14 @@ cursor: pointer; padding:10px 0; border:1px solid #e7e7e7; margin-bottom:20px; }
 .runTop {
   height: 35px;
   width: 35px;
-  background-color: #fff;
+  background-color: #a94442;
   border-radius: 5px;
   position: fixed;
-  top: 90%;
+  top: 87.5%;
   right: 3%;
   display: none;
   box-shadow: 1px 1px 3px #666;
+
 }
 
 .runTop span {
@@ -602,38 +620,38 @@ cursor: pointer; padding:10px 0; border:1px solid #e7e7e7; margin-bottom:20px; }
 	height:35px;
 	border: #727172 12px solid;
 	border-radius:35px;
-	margin:0 auto;
+	margin: auto;
 	position:relative;
 	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .footer #button:hover{
 	width:35px;
 	height:35px;
 	border: #3A3A3A 12px solid;
 	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 	position:relative;
 }
 .footer {
 	bottom:0;
 	left:0;
 	position:fixed;
-    width: 100%;
-    height: 2em;
-    overflow:hidden;
-    margin:0 auto;
+  width: 100%;
+  height: 1em;
+  overflow:hidden;
+  margin:0 auto;
 	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 	z-index:999;
 }
 .footer:hover {
@@ -642,7 +660,7 @@ cursor: pointer; padding:10px 0; border:1px solid #e7e7e7; margin-bottom:20px; }
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-	height: 10em;
+	height: 7em;
 }
 .footer #container{
 	margin-top:5px;
@@ -669,8 +687,7 @@ cursor: pointer; padding:10px 0; border:1px solid #e7e7e7; margin-bottom:20px; }
 .footer h3{
 	font-family: 'Helvetica';
 	font-size: 15px;
-	font-weight: 100;
-	margin-top:70px;
+	font-weight: bold;
+	margin-top:65px;
 	margin-left:40px;
-  padding-top: 15px;
 }
